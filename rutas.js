@@ -1,15 +1,15 @@
-var app= angular.module('App',['ngRoute']);
+var app= angular.module('myApp',['ngRoute']);
 
 app.config(function($routeProvider) {
-    $routeProvider.when('/pagina1',
-    {
-    templateUrl: 'hola.html'
-    }
+    
+    $routeProvider.when('/pagina1',{
+    templateUrl: 'p1.html'
+    })
     .when('/hola',
     {
     templateUrl: 'hola.html'
-    }
- );
+    });
+
        
     
 });
