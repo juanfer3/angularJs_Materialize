@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+    <link rel="stylesheet" href="materialize-src/css/materialize.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="materialize-src/js/bin/materialize.min.js"></script>
+    
+    
+    
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    
+    
+    
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="rutas.js"></script>
+
+</head>
+<body>
+	<nav class="white " role="navigation">
+		<div class="container">
+		  <div class="nav-wrapper">
+		  	<div id="logo-container">
+				<a href="https://adbeus.com"><img width="40" class="icon hide-on-med-and-down" src="https://adbeus.com/wp-content/uploads/2015/02/adbeus_icon-02.png" alt=""></a>
+			  	<a href="#" class="brand-logo">adbeus</a>
+		  	</div>
+
+			  
+			  <div class="menu-adbeus-container"><ul id="menu-adbeus" class="right hide-on-med-and-down"><li id="menu-item-2025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2025"><a href="#/employees">Listar</a></li>
+<li id="menu-item-5057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="#/employees/formulario">Crear</a></li>
+<li id="menu-item-5639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5639"><a href="#"></a></li>
+
+</ul></div>
+			  		<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		    <!-- <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a> -->
+		  </div>
+		</div>
+	</nav>
+
+
+
+
+<ul>
+    <li >
+        <a href="#!pagina1"> Listar</a>
+    </li>
+    <li>
+        <a href="#!hola"> Creaasdfsd</a>
+    </li>
+</ul>
+
+
+<div ng-view></div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
