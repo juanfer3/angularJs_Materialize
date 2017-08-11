@@ -1,0 +1,61 @@
+<script>
+         $(document).ready(function() {
+         $('select').material_select();
+      });
+      </script>
+<div class="container">
+<h3>Registrar Usuario</h3>
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input  id="first_name" type="text" class="validate" ng-model="nombre">
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" ng-model="cedula">
+          <label for="last_name">cedula</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          
+               
+               <select id="rol" ng-model="rol">
+                  <option value="" disabled selected>Seleccione Rol</option>
+                  <option value="1">Gerente</option>
+                  <option value="2">Vendedor</option>
+                  <option value="3">Cliente</option>
+               </select>               
+            
+         
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" ng-model="user">
+       
+          <label for="email" data-error="wrong" data-success="right">Usuario</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate" ng-model="contrasena">
+       
+          <label for="password" data-error="error" data-success="Ok">Contraseña</label>
+        </div>
+      </div>
+      <div class="fixed-action-btn horizontal" ng-controller="CrearController">
+    <a ng-click="enviar()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        
+  </div>
+     
+     
+     <div ng-controller="CrearController">
+     <a ng-click="con()" class="waves-effect waves-light btn">button</a>
+     <h1>{{x}}</h1>
+      <input type="" ng-model='x'>
+      </div>
+    </form>
+  </div>
+  </div>

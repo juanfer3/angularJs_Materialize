@@ -1,0 +1,5 @@
+function  boton(){
+	
+	alert("hola");
+	
+}

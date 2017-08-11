@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 
-  
-    
     <link rel="stylesheet" href="materialize-src/css/materialize.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="estilos.css">
@@ -25,7 +23,6 @@
     <script src="rutas.js"></script>
 
 	<script src="funciones.js"></script>
-	
 </head>
 <body>
 	<nav class="white " role="navigation">
@@ -42,7 +39,7 @@
 			  <li id="menu-item-2025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2025">
 			  <a href="#!Listar">Listar</a>
 			  </li>
-			  <li id="menu-item-5057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="#!Crear">Crear</a>
+			  <li id="menu-item-5057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="#">Crear</a>
               </li>
               <li id="menu-item-5639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5639"><a href="#">Ver</a></li>
 
@@ -55,12 +52,51 @@
 
 
 
-<!--div ng-controller="CrearController">
-<input type="text" >
-<h1>{{mensaje}}</h1>
-<a ng-click="cambiarMensaje()" class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-   </div-->     
-
+  
+<div class="container">
+<h3>Registrar Usuario</h3>
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">cedula</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="rol" type="text" class="validate">
+       	  <select class="input-field col s12" multiple>
+       	  	<option>Gerrente</option>
+       	  	<option>Vendedor</option>
+       	  	<option>Cliente</option>
+       	  </select>
+          <label for="rol" data-error="wrong" data-success="right">Rol</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+       
+          <label for="email" data-error="wrong" data-success="right">Usuario</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+       
+          <label for="password" data-error="error" data-success="Ok">Contraseña</label>
+        </div>
+      </div>
+      
+      
+    </form>
+  </div>
+  </div>
 
 <div ng-view></div>
 
