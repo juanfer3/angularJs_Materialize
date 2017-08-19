@@ -6,10 +6,12 @@ app.controller('CrearController', function ($route, $scope, $http, $routeParams)
     $scope.user;
     $scope.contrasena;
     $scope.users;
-
+    $scope.cont;
     $scope.id = "1";
     $scope.x;
     $scope.tomo;
+    
+    
 
     $scope.con = function () {
         $http({
@@ -45,6 +47,7 @@ app.controller('CrearController', function ($route, $scope, $http, $routeParams)
             alert(respose.data);
             console.log(respose.config);
             console.log(respose);
+            window.location.href='http://localhost/angularJs_Materialize/index.html#!/Listar';
         }, function (error) {
             alert(":(");
         });
@@ -54,10 +57,15 @@ app.controller('CrearController', function ($route, $scope, $http, $routeParams)
             method: 'POST',
             url: "node_modules/Controller/ListarEmpleados.php"
         }).then(function (response) {
+            
             console.log(response.data);
             $scope.users = response.data;
+            $scope.cont =$scope.users.length;;
+            console.log(this.cont);
+            
         }), function (falla) {
             alert("falla en la conexion");
         };
     };
+    $scope.info= $scope.getUsers();
 });
